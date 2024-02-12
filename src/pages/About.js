@@ -5,11 +5,12 @@ function About() {
   return (
     <>
         <Navbar />
-        <div className="container mt-5">
+        <div className="container about-container">
+          <h2 className="about-heading text-center mb-5">About Us <hr className='decorator-line' /></h2>
       <div className="row justify-content-center">
         {/* First Row */}
         <div className="col-lg-2 col-md-4">
-          <div className="card text-center mb-3 h-100">
+          <div className="card text-center mb-3 h-100 about-card">
             <div className="card-body">
               <i className="bi bi-clock-history fs-3 mb-3"></i>
               <h5 className="card-title">Years of Experience</h5>
@@ -18,7 +19,7 @@ function About() {
           </div>
         </div>
         <div className="col-lg-2 col-md-4">
-          <div className="card text-center mb-3 h-100">
+          <div className="card text-center mb-3 h-100 about-card">
             <div className="card-body">
               <i className="bi bi-clock fs-3 mb-3"></i>
               <h5 className="card-title">Hours of Support</h5>
@@ -27,7 +28,7 @@ function About() {
           </div>
         </div>
         <div className="col-lg-2 col-md-4">
-          <div className="card text-center mb-3 h-100">
+          <div className="card text-center mb-3 h-100 about-card">
             <div className="card-body">
               <i className="bi bi-people fs-3 mb-3"></i>
               <h5 className="card-title">Reliable Company</h5>
@@ -36,7 +37,7 @@ function About() {
           </div>
         </div>
         <div className="col-lg-2 col-md-4">
-          <div className="card text-center mb-3 h-100">
+          <div className="card text-center mb-3 h-100 about-card">
             <div className="card-body">
               <i className="bi bi-check-circle fs-3 mb-3"></i>
               <h5 className="card-title">Completed Projects</h5>
@@ -45,7 +46,7 @@ function About() {
           </div>
         </div>
         <div className="col-lg-2 col-md-4">
-          <div className="card text-center mb-3 h-100">
+          <div className="card text-center mb-3 h-100 about-card">
             <div className="card-body">
               <i className="bi bi-people fs-3 mb-3"></i>
               <h5 className="card-title">Expert Team</h5>

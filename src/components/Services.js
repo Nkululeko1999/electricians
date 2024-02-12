@@ -6,7 +6,7 @@ export default function Services() {
     <>
     <Navbar />
     <div className="container services-container">
-      <h2 className='text-center service-heading'>Our Services</h2>
+      <h2 className='text-center service-heading'>Our Services <hr className='decorator-line' /></h2>
       <div className="row">
         {/* Wiring Services */}
         <div className="col-md-3 mb-4">

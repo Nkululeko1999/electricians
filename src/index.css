@@ -208,6 +208,40 @@ button.quote-btn {
   font-size: 1.15rem;
 }
 
+/* ###################################### Start: Info ###################################### */
+
+.info-container {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.info-heading {
+  margin: 1.5rem;
+  font-weight: 500;
+}
+
+.info-card-container {
+  margin-top: 1.5rem;
+}
+
+.info-card {
+  border: none;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.06), -3px -4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.info-card h5 {
+  margin-bottom: 12px;
+}
+
+.info-card p {
+  margin: 8px 0;
+  font-size: 1.15rem;
+}
+
+/* ###################################### End: Info ###################################### */
+
 
 /* ###################################### Start: Projects ###################################### */
 
@@ -311,6 +345,30 @@ h3.card-title {
 }
 
 /* ###################################### End: Services ###################################### */
+
+/* ###################################### Start: About ###################################### */
+
+.about-container {
+  margin-top: 10rem;
+}
+
+.decorator-line {
+  border: none;
+  width: 9rem;
+  height: 4px;
+  background-color: #eab308;
+  opacity: 1;
+  margin: 1rem auto;
+}
+
+.about-card {
+  border: none;
+  min-width: 10rem;
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.06), -3px -4px 6px rgba(0, 0, 0, 0.06);
+  border-radius: 12px 40px 12px 40px;
+}
+
+/* ###################################### End: About ###################################### */
 
 
 
