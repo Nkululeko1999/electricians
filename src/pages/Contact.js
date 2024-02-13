@@ -26,15 +26,16 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <div className="container my-5 py-5">
+      <div className="container contact-container">
+      <h2 className="heading-h2 text-center mb-5">Contact Us <hr className='decorator-line' /></h2>
         <div className="row">
           {/* Column 1 */}
           <div className="col-lg-6 d-flex flex-column">
-            <div className="card shadow-sm mb-4 flex-grow-1">
-              <div className="card-body">
+            <div className="card shadow-sm mb-4 flex-grow-1 contact-card">
+              <div className="card-body text-center">
                 <i className="bi bi-geo-alt fs-3 mb-3"></i>
-                <h3 className="card-title">Our Physical Address</h3>
-                <p className="card-text">123 Main St, City, Country</p>
+                <h3 className="card-title my-3">Our Physical Address</h3>
+                <p className="card-text mb-3">123 Main St, City, Country</p>
               </div>
             </div>
             <div
@@ -56,20 +57,20 @@ function Contact() {
           <div className="col-lg-6">
             <div className="row">
               <div className="col-md-6">
-                <div className="card shadow-sm mb-4">
-                  <div className="card-body">
+                <div className="card shadow-sm mb-4 contact-card">
+                  <div className="card-body text-center">
                     <i className="bi bi-envelope fs-3 mb-3"></i>
-                    <h3 className="card-title">Email Us</h3>
-                    <p className="card-text">example@example.com</p>
+                    <h3 className="card-title my-3">Email Us</h3>
+                    <p className="card-text mb-3">example@example.com</p>
                   </div>
                 </div>
               </div>
               <div className="col-md-6">
-                <div className="card shadow-sm mb-4">
-                  <div className="card-body">
+                <div className="card shadow-sm mb-4 contact-card">
+                  <div className="card-body text-center">
                     <i className="bi bi-telephone fs-3 mb-3"></i>
-                    <h3 className="card-title">Call Us</h3>
-                    <p className="card-text">+1234567890</p>
+                    <h3 className="card-title my-3">Call Us</h3>
+                    <p className="card-text mb-3">+1234567890</p>
                   </div>
                 </div>
               </div>
@@ -77,7 +78,7 @@ function Contact() {
             {/* Contact Form */}
             <div className="card shadow-sm">
               <div className="card-body">
-                <h3 className="card-title">Contact Form</h3>
+                <h2 className="card-title my-3">Send Message</h2>
                 <form onSubmit={handleSubmit}>
                   <div className="mb-3">
                     <label htmlFor="name" className="form-label">
@@ -135,8 +136,8 @@ function Contact() {
                       onChange={handleChange}
                     ></textarea>
                   </div>
-                  <button type="submit" className="btn btn-primary">
-                    Submit
+                  <button type="submit" className="submit-btn">
+                    Send Message
                   </button>
                 </form>
               </div>

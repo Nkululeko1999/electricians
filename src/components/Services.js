@@ -10,7 +10,7 @@ export default function Services() {
       <div className="row">
         {/* Wiring Services */}
         <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card">
+          <div className="card text-center h-100 service-card rounded-3">
             <div className="card-body">
               <i className='bi bi-lightning mb-3 service-icons'></i>
               <h3 className='card-title'>Wiring Services</h3>
@@ -20,7 +20,7 @@ export default function Services() {
         </div>
         {/* Circuit Services */}
         <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card">
+          <div className="card text-center h-100 service-card rounded-3">
             <div className="card-body">
               <i className="bi bi-lightning mb-3  service-icons"></i>
               <h3 className='card-title'>Circuit Services</h3>
@@ -30,7 +30,7 @@ export default function Services() {
         </div>
         {/* Lighting Services */}
         <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card">
+          <div className="card text-center h-100 service-card rounded-3">
             <div className="card-body">
               <i className="bi bi-lightbulb mb-3  service-icons"></i>
               <h3 className='card-title'>Lighting Services</h3>
@@ -40,7 +40,7 @@ export default function Services() {
         </div>
         {/* Outlet and Switch Services */}
         <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card">
+          <div className="card text-center h-100 service-card rounded-3">
             <div className="card-body">
               <i className="bi bi-plug mb-3  service-icons"></i>
               <h3 className='card-title'>Outlet and Switch Services</h3>
@@ -50,7 +50,7 @@ export default function Services() {
         </div>
         {/* Drain Cleaning */}
         <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card">
+          <div className="card text-center h-100 service-card rounded-3">
             <div className="card-body">
               <i class="bi bi-water service-icons"></i>
               <h3 className='card-title'>Drain Cleaning</h3>
@@ -60,7 +60,7 @@ export default function Services() {
         </div>
         {/* Fixture Installation and Repair */}
         <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card">
+          <div className="card text-center h-100 service-card rounded-3">
             <div className="card-body">
               <i className="bi bi-tools mb-3  service-icons"></i>
               <h3 className='card-title'>Fixture Installation and Repair</h3>
@@ -70,7 +70,7 @@ export default function Services() {
         </div>
         {/* Pipe Repairs and Replacements */}
         <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card">
+          <div className="card text-center h-100 service-card rounded-3">
             <div className="card-body">
               <i class="bi bi-sliders service-icons"></i>
               <h3 className='card-title'>Pipe Repairs and Replacements</h3>
@@ -80,7 +80,7 @@ export default function Services() {
         </div>
         {/* Leak Detection and Repair */}
         <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card">
+          <div className="card text-center h-100 service-card rounded-3">
             <div className="card-body">
               <i className="bi bi-droplet mb-3  service-icons"></i>
               <h3 className='card-title'>Leak Detection and Repair</h3>

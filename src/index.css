@@ -14,8 +14,18 @@ code {
     monospace;
 }
 
-.card, .form-control {
+.card, .form-control, .form-select {
   border-radius: 0;
+}
+
+.form-label{
+  font-size: 1.05rem;
+}
+
+.heading-h2 {
+  font-size: 2rem;
+  color: #475569;
+  margin-bottom: 50px;
 }
 
 /* ###################################### Navbar ###################################### */
@@ -198,7 +208,7 @@ h1 {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-button.quote-btn {
+button.submit-btn {
   width: 100%;
   border: none;
   padding-top: 8px;
@@ -206,6 +216,12 @@ button.quote-btn {
   background-color: #eab308;
   color: #fff;
   font-size: 1.15rem;
+}
+
+button.submit-btn:hover {
+  background-color: #facc15;
+  color: #fff;
+  transition: all 0.35s;
 }
 
 /* ###################################### Start: Info ###################################### */
@@ -226,7 +242,7 @@ button.quote-btn {
 
 .info-card {
   border: none;
-  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.06), -3px -4px 6px rgba(0, 0, 0, 0.06);
+  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.07), -3px -4px 6px rgba(0, 0, 0, 0.07);
   border-radius: 12px;
   padding: 12px;
 }
@@ -304,7 +320,8 @@ p.project-text {
 
 .project-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
+  color: #facc15;
 }
 
 .project-message {
@@ -352,6 +369,10 @@ h3.card-title {
   margin-top: 10rem;
 }
 
+.about-heading {
+  margin-bottom: 5rem;
+}
+
 .decorator-line {
   border: none;
   width: 9rem;
@@ -363,12 +384,38 @@ h3.card-title {
 
 .about-card {
   border: none;
-  min-width: 10rem;
+  min-height: 10rem;
+  max-height: 10rem;
   box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.06), -3px -4px 6px rgba(0, 0, 0, 0.06);
   border-radius: 12px 40px 12px 40px;
 }
 
+.about-info-container {
+  margin-top: 5rem;
+}
+
+.story {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
 /* ###################################### End: About ###################################### */
+
+/* ###################################### Start: Contact ###################################### */
+
+.contact-container {
+  margin-top: 10rem;
+}
+
+.contact-card:hover {
+  background-color: #334155;
+  color: #fff;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+/* ###################################### End: Contact ###################################### */
 
 
 

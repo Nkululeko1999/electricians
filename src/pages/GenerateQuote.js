@@ -48,7 +48,7 @@ export default function GenerateQuote() {
                       rows="4"
                     ></textarea>
                   </div>
-                  <button type="submit" className="quote-btn">
+                  <button type="submit" className="submit-btn">
                     Get a Quote
                   </button>
                 </form>
