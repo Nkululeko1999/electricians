@@ -1,3 +1,4 @@
+import Footer from './Footer';
 import Navbar from './Navbar';
 
 export default function Services() {
@@ -90,6 +91,7 @@ export default function Services() {
         </div>
       </div>
     </div>
+    <Footer />
     </>
   );
 }

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import axios from 'axios';
 import { toast } from "react-toastify"; 
+import Footer from "../components/Footer";
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -150,6 +151,7 @@ function Contact() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

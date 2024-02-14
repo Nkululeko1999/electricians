@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import imgUrl from '../components/repair/four.jpg';
 import aboutBg from '../components/backgrounds/about.jpg'
+import Footer from '../components/Footer';
 
 function About() {
   return (
@@ -75,7 +76,9 @@ function About() {
               <img src={imgUrl} alt="Our Story" className="img-fluid rounded quote-image" />
             </div>
           </div>
-    </div>
+        </div>
+
+        <Footer />
     </>
   );
 }

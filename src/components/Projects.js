@@ -28,7 +28,7 @@ function Projects() {
               <img src={project.src} alt={project.title} className="project-image" />
               <div className="project-overlay">
                 <div className="project-title">{project.title}</div>
-                <div className="project-message">{project.message}</div>
+                <div className="project-message text-center">{project.message}</div>
               </div>
             </div>
           </div>

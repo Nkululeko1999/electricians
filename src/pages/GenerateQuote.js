@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 export default function GenerateQuote() {
   const [formData, setFormData] = useState({
@@ -87,6 +88,7 @@ export default function GenerateQuote() {
           </div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }
