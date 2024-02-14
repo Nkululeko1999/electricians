@@ -18,6 +18,12 @@ code {
   border-radius: 0;
 }
 
+.custom-toast-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
 .form-label{
   font-size: 1.05rem;
 }

@@ -6,6 +6,8 @@ import About from './pages/About';
 import GenerateQuote from './pages/GenerateQuote';
 import Footer from './components/Footer';
 import Services from './components/Services';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -17,6 +19,7 @@ function App() {
         <Route path='/quote' element={<GenerateQuote />} />
         <Route path='/services' element={<Services />} />
       </Routes>
+      <ToastContainer className="custom-toast-container" />
       <Footer />
     </BrowserRouter>
   );

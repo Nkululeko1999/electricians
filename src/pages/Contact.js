@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
+import axios from 'axios';
+import { toast } from "react-toastify"; 
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    subject: "Select Subject",
     message: "",
   });
 
@@ -17,10 +18,31 @@ function Contact() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log(formData);
+    try {
+      
+      const response = await axios.post("http://localhost:5000/api/auto-responder/send-message", formData);
+      
+      console.log('Success:', response.data);
+      toast.success(response.data.message);
+    } catch (error) {
+
+      if (error.response) {
+
+        console.error('Server responded with error data:', error.response.data);
+        toast.error(error.response.data.message);
+        console.error('Status code:', error.response.status);
+        console.error('Headers:', error.response.headers);
+      } else if (error.request) {
+        
+        console.error('No response received:', error.request);
+      } else {
+        
+        console.error('Error occurred during request setup:', error.message);
+      }
+    }
+    setFormData({ name: "", email: "", message: "" });
   };
 
   return (
@@ -105,23 +127,6 @@ function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                     />
-                  </div>
-                  <div className="mb-3">
-                    <label htmlFor="subject" className="form-label">
-                      Subject
-                    </label>
-                    <select
-                      className="form-select"
-                      id="subject"
-                      name="subject"
-                      value={formData.subject}
-                      onChange={handleChange}
-                    >
-                      <option>Select Subject</option>
-                      <option>General Inquiry</option>
-                      <option>Technical Support</option>
-                      <option>Feedback</option>
-                    </select>
                   </div>
                   <div className="mb-3">
                     <label htmlFor="message" className="form-label">
