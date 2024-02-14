@@ -71,6 +71,7 @@ function Contact() {
                 style={{ border: 0, height: "100%", width: "100%" }}
                 allowFullScreen=""
                 loading="lazy"
+                title="location"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>

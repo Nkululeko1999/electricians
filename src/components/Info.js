@@ -1,4 +1,4 @@
-import rotateOneImg from '../components/plumbing/irrigation.jpg';
+
 
 function Info() {
   return (
