@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import { toast } from "react-toastify";
 
 export default function GenerateQuote() {
   const [formData, setFormData] = useState({
@@ -22,10 +23,12 @@ export default function GenerateQuote() {
     e.preventDefault();
     try {
       const response = await axios.post("https://electricians-api.onrender.com/api/auto-responder/quote", formData);
+      toast.success(response.data.message);
       console.log('Success:', response.data);
     } catch (error) {
       if (error.response) {
         console.error('Server responded with error data:', error.response.data);
+        toast.error(error.response.data.message);
         console.error('Status code:', error.response.status);
         console.error('Headers:', error.response.headers);
       } else if (error.request) {
