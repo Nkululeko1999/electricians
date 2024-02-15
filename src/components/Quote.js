@@ -20,7 +20,7 @@ export default function Quote() {
     e.preventDefault();
     try {
       
-      const response = await axios.post("http://localhost:5000/api/auto-responder/quote", formData);
+      const response = await axios.post("https://electricians-api.onrender.com/api/auto-responder/quote", formData);
       
       console.log('Success:', response.data);
     } catch (error) {
