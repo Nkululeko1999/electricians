@@ -2,19 +2,22 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-y: auto !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
-.card, .form-control, .form-select {
+.card,
+.form-control,
+.form-select {
   border-radius: 0;
 }
 
@@ -24,7 +27,7 @@ code {
   right: 20px;
 }
 
-.form-label{
+.form-label {
   font-size: 1.05rem;
 }
 
@@ -38,7 +41,6 @@ code {
 .navbar {
   background-color: #fff;
   height: 80px;
-  /* border-radius: 1rem; */
   padding: 0.5rem;
 }
 
@@ -69,7 +71,8 @@ code {
   font-size: 1.25rem;
 }
 
-.navbar-toggler:focus, .btn-close {
+.navbar-toggler:focus,
+.btn-close {
   box-shadow: none;
   outline: none;
 }
@@ -80,7 +83,8 @@ code {
   position: relative;
 }
 
-.nav-link:hover, .nav-link:active {
+.nav-link:hover,
+.nav-link:active {
   color: #000;
 }
 
@@ -102,11 +106,15 @@ code {
     width: 100%;
     visibility: visible;
   }
+
+  body {
+    overflow-y: scroll;
+  }
 }
 
 /* ###################################### Start Header ###################################### */
 .header {
-  background: url('../public/images/headerImg.jpg') no-repeat;
+  background: url("../public/images/headerImg.jpg") no-repeat;
   background-size: cover;
   width: 100%;
 }
@@ -154,7 +162,6 @@ code {
   color: #eab308;
   transition: all 0.3s;
 }
-
 
 @keyframes transitionInFromTop {
   from {
@@ -211,7 +218,9 @@ h1 {
 
 .quote-card {
   border: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 -4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow:
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 button.submit-btn {
@@ -248,10 +257,15 @@ button.submit-btn:hover {
 
 .info-card {
   border: none;
-  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.07), -3px -4px 6px rgba(0, 0, 0, 0.07);
+  box-shadow:
+    3px 4px 6px rgba(0, 0, 0, 0.07),
+    -3px -4px 6px rgba(0, 0, 0, 0.07);
   border-radius: 12px;
   padding: 12px;
-  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s,
+    background-color 0.3s;
 }
 
 .info-card h5 {
@@ -265,15 +279,13 @@ button.submit-btn:hover {
 
 .info-card:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #475569; 
+  background-color: #475569;
   color: #fff;
   transform: scale(1.05);
   cursor: pointer;
 }
 
-
 /* ###################################### End: Info ###################################### */
-
 
 /* ###################################### Start: Projects ###################################### */
 
@@ -283,7 +295,7 @@ button.submit-btn:hover {
 
 p.project-text {
   font-size: 1.15rem;
-  margin: 1.5rem
+  margin: 1.5rem;
 }
 .project-navigation {
   text-align: center;
@@ -354,7 +366,6 @@ p.project-text {
 
 /* ###################################### End: Projects ###################################### */
 
-
 /* ###################################### Start: Services ###################################### */
 
 .services-container {
@@ -369,12 +380,15 @@ h2.service-heading {
 
 .service-card {
   min-height: 14rem;
-  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s,
+    background-color 0.3s;
 }
 
 .service-card:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #475569; 
+  background-color: #475569;
   color: #fff;
   transform: scale(1.05);
   cursor: pointer;
@@ -382,7 +396,7 @@ h2.service-heading {
 
 .service-icons {
   font-size: 2.5rem;
-} 
+}
 
 h3.card-title {
   font-size: 1.35rem;
@@ -413,14 +427,19 @@ h3.card-title {
   border: none;
   min-height: 10rem;
   max-height: 10rem;
-  box-shadow: 3px 4px 6px rgba(0, 0, 0, 0.06), -3px -4px 6px rgba(0, 0, 0, 0.06);
+  box-shadow:
+    3px 4px 6px rgba(0, 0, 0, 0.06),
+    -3px -4px 6px rgba(0, 0, 0, 0.06);
   border-radius: 12px 40px 12px 40px;
-  transition: box-shadow 0.3s, transform 0.3s, background-color 0.3s;
+  transition:
+    box-shadow 0.3s,
+    transform 0.3s,
+    background-color 0.3s;
 }
 
 .about-card:hover {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #475569; 
+  background-color: #475569;
   color: #fff;
   transform: scale(1.05);
   cursor: pointer;
@@ -465,8 +484,6 @@ h3.card-title {
 
 /* ###################################### End: Contact ###################################### */
 
-
-
 /* ###################################### Start: Footer ###################################### */
 
 footer {
@@ -478,7 +495,8 @@ footer h5 {
   margin-bottom: 1rem;
 }
 
-footer p, address {
+footer p,
+address {
   opacity: 0.9;
 }
 
@@ -517,10 +535,6 @@ footer .footer-links:hover {
 }
 
 /* ###################################### End: Footer ###################################### */
-
-
-
-
 
 /* ###################################### Spinner ###################################### */
 
