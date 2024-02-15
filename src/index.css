@@ -106,10 +106,6 @@ code {
     width: 100%;
     visibility: visible;
   }
-
-  body {
-    overflow-y: scroll;
-  }
 }
 
 /* ###################################### Start Header ###################################### */

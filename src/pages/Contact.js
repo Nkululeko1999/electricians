@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "../components/Navbar";
-import axios from 'axios';
-import { toast } from "react-toastify"; 
+import axios from "axios";
+import { toast } from "react-toastify";
 import Footer from "../components/Footer";
 
 function Contact() {
@@ -24,31 +24,29 @@ function Contact() {
 
     let emailFailed = false;
     try {
-      
-      const response = await axios.post("https://electricians-api.onrender.com/api/auto-responder/send-message", formData);
-      
-      console.log('Success:', response.data);
+      const response = await axios.post(
+        "https://electricians-api.onrender.com/api/auto-responder/send-message",
+        formData,
+      );
+
+      console.log("Success:", response.data);
       toast.success(response.data.message);
     } catch (error) {
-
       if (error.response) {
-
-        console.error('Server responded with error data:', error.response.data);
-        if(error.response.data.message === "Email format is not correct."){
-          emailFailed = true
+        console.error("Server responded with error data:", error.response.data);
+        if (error.response.data.message === "Email format is not correct.") {
+          emailFailed = true;
         }
         toast.error(error.response.data.message);
-        console.error('Status code:', error.response.status);
-        console.error('Headers:', error.response.headers);
+        console.error("Status code:", error.response.status);
+        console.error("Headers:", error.response.headers);
       } else if (error.request) {
-        
-        console.error('No response received:', error.request);
+        console.error("No response received:", error.request);
       } else {
-        
-        console.error('Error occurred during request setup:', error.message);
+        console.error("Error occurred during request setup:", error.message);
       }
     }
-    if(!emailFailed){
+    if (!emailFailed) {
       setFormData({ name: "", email: "", message: "" });
     }
   };
@@ -57,7 +55,9 @@ function Contact() {
     <>
       <Navbar />
       <div className="container contact-container">
-      <h2 className="heading-h2 text-center mb-5">Contact Us <hr className='decorator-line' /></h2>
+        <h2 className="heading-h2 text-center mb-5">
+          Contact Us <hr className="decorator-line" />
+        </h2>
         <div className="row">
           {/* Column 1 */}
           <div className="col-lg-6 d-flex flex-column">
@@ -69,7 +69,7 @@ function Contact() {
               </div>
             </div>
             <div
-              className="embed-responsive embed-responsive-4by3 flex-grow-1"
+              className={`embed-responsive embed-responsive-4by3 flex-grow-1`}
               style={{ height: "100%" }}
             >
               <iframe
