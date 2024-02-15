@@ -21,6 +21,8 @@ function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    let emailFailed = false;
     try {
       
       const response = await axios.post("https://electricians-api.onrender.com/api/auto-responder/send-message", formData);
@@ -32,6 +34,9 @@ function Contact() {
       if (error.response) {
 
         console.error('Server responded with error data:', error.response.data);
+        if(error.response.data.message === "Email format is not correct."){
+          emailFailed = true
+        }
         toast.error(error.response.data.message);
         console.error('Status code:', error.response.status);
         console.error('Headers:', error.response.headers);
@@ -43,7 +48,9 @@ function Contact() {
         console.error('Error occurred during request setup:', error.message);
       }
     }
-    setFormData({ name: "", email: "", message: "" });
+    if(!emailFailed){
+      setFormData({ name: "", email: "", message: "" });
+    }
   };
 
   return (
