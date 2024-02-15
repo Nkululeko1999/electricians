@@ -21,7 +21,7 @@ export default function GenerateQuote() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post("http://localhost:5000/api/auto-responder/quote", formData);
+      const response = await axios.post("https://electricians-api.onrender.com/api/auto-responder/quote", formData);
       console.log('Success:', response.data);
     } catch (error) {
       if (error.response) {
