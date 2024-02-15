@@ -23,7 +23,7 @@ function Contact() {
     e.preventDefault();
     try {
       
-      const response = await axios.post("http://localhost:5000/api/auto-responder/send-message", formData);
+      const response = await axios.post("https://electricians-api.onrender.com/api/auto-responder/send-message", formData);
       
       console.log('Success:', response.data);
       toast.success(response.data.message);
