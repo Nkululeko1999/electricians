@@ -3,12 +3,25 @@ import Navbar from "../components/Navbar";
 import axios from "axios";
 import { toast } from "react-toastify";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 function Contact() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
+  });
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   });
 
   const handleChange = (e) => {
@@ -69,7 +82,7 @@ function Contact() {
               </div>
             </div>
             <div
-              className={`embed-responsive embed-responsive-4by3 flex-grow-1`}
+              className={`embed-responsive embed-responsive-4by3 flex-grow-1 ${windowWidth < 992 ? "mb-4" : ""}`}
               style={{ height: "100%" }}
             >
               <iframe

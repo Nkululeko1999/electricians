@@ -52,7 +52,8 @@ code {
 }
 
 .quote-button {
-  background-color: #facc15;
+  background-color: #334155;
+  font-weight: 600;
   border: none;
   color: #fff;
   font-size: 14px;
@@ -63,7 +64,7 @@ code {
 }
 
 .quote-button:hover {
-  background-color: #eab308;
+  background-color: #1e293b;
 }
 
 .navbar-toggler {
@@ -458,7 +459,7 @@ h3.card-title {
   width: 80px;
   height: 80px;
   border-radius: 14px 18px 14px 18px;
-  background-color: #eab308;
+  background-color: #334155;
   color: #fff;
   font-weight: 600;
 }
