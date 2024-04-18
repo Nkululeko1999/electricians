@@ -3,6 +3,9 @@ import footerBgImg from "../components/repair/wiring.jpg";
 import { Link } from 'react-router-dom';
 
 function Footer() {
+  const currentDate = new Date();
+  const currentYear = currentDate.getFullYear();
+
   return (
     <footer
       className="footer"
@@ -13,17 +16,21 @@ function Footer() {
       <div className="container text-white">
         <div className="row">
           <div className="col-md-3">
-            <h5>CONSTRUCTION</h5>
+            <h5>KM ELECTRICAL CONSTRUCTION</h5>
+            <p className="slogan">The Classic Short Circuit</p>
+
             <address>
-              234 Ivory Park
+              8832 Shukuma Street
               <br />
-              Johannesburg, Gauteng
+              Midrand, Johannesburg
+              <br />
+              1685
               <br />
             </address>
-            <p className="mb-0"><span>Phone:</span> +277 689 5548 </p>
-            <p><span>Email:</span> info@example.com</p>
+            <p className="mb-0"><span>Phone:</span> 078 937 6656 / 063 571 7049 </p>
+            <p><span>Email:</span> moseskhanyelihle3@gmaim.com</p>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-3 useful-links">
             <h5>Useful Links</h5>
             <ul className="list-unstyled">
               <li>
@@ -44,10 +51,40 @@ function Footer() {
             <h5>Our Services</h5>
             <ul className="list-unstyled">
               <li>
-                <Link className="footer-links">Electricity Repairs</Link>
+                <Link className="footer-links">Industrial Commercial Domestic</Link>
               </li>
               <li>
-                <Link className="footer-links">Plumbing</Link>
+                <Link className="footer-links">Faults</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Maintenance</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Generators</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Appliances</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Compliance Testing</Link>
+              </li>
+              <li>
+                <Link className="footer-links">HV Equipments</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Leads Process</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Line Control Wiring</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Switch Boards</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Pumps</Link>
+              </li>
+              <li>
+                <Link className="footer-links">Lighting</Link>
               </li>
             </ul>
           </div>
@@ -57,14 +94,13 @@ function Footer() {
                 <li><Link><i className="bi bi-facebook footer-icons"></i></Link></li>
                 <li><Link><i className="bi bi-instagram footer-icons"></i></Link></li>
                 <li><Link><i className="bi bi-envelope footer-icons"></i></Link></li>
-                <li><Link><i className="bi bi-twitter footer-icons"></i></Link></li>
             </ul>
           </div>
         </div>
         <hr className="my-4" />
         <div className="row">
           <div className="col-md-12 d-flex justify-content-center">
-            <p>2024 © Copyright Construction. All Rights Reserved</p>
+            <p>{currentYear} © Copyright Construction. All Rights Reserved</p>
           </div>
         </div>
       </div>

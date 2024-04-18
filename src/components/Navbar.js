@@ -8,7 +8,7 @@ function Navbar() {
     <NavLink to='/' className="navbar-brand me-auto">Logo</NavLink>
     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
       <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Logo</h5>
+        <h6 class="offcanvas-title" id="offcanvasNavbarLabel">KM EECTRICAL CONSTRUCTION</h6>
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
       </div>
       <div class="offcanvas-body">

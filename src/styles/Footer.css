@@ -1,0 +1,68 @@
+footer {
+    margin-top: 6rem;
+    padding-top: 2rem;
+  }
+  
+  footer h5 {
+    margin-bottom: 1rem;
+  }
+  
+  footer p,
+  address {
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 1.05rem;
+  }
+
+  .slogan {
+    font-size: 0.925rem;
+  }
+  
+  footer p span {
+    font-weight: bold;
+  }
+  
+  ul.footer-icons-container {
+    display: flex;
+  }
+  
+  footer ul li .footer-icons {
+    font-size: 1.5rem;
+    margin-right: 6px;
+    padding: 4px;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #facc15;
+  }
+  
+  footer ul li .footer-icons:hover {
+    background-color: #facc15;
+    color: #fff;
+    transition: all 0.3s;
+  }
+  
+  footer .footer-links {
+    font-size: 0.98rem;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.9;
+  }
+  
+  footer .footer-links:hover {
+    text-decoration: underline;
+    color: #facc15;
+  }
+
+
+  /* Media Queries */
+  @media (min-width: 768px) {
+    .useful-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+  }
+  
+
+  
