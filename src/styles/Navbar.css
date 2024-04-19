@@ -1,0 +1,81 @@
+.navbar {
+    background-color: #fff;
+    max-height: 80px;
+    padding: 0.5rem;
+    border-bottom: #0e7490;
+    border-bottom: 4px solid #0e7490;
+  }
+  
+.navbar-brand {
+    font-weight: 500;
+    color: #0e7490;
+    font-size: 24px;
+    transition: 0.3s color;
+}
+  
+.quote-button {
+    background-color: #0e7490;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+  }
+  
+  .quote-button:hover {
+    background-color: #164e63;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    font-size: 1.25rem;
+  }
+  
+  .navbar-toggler:focus,
+  .btn-close {
+    box-shadow: none;
+    outline: none;
+  }
+  
+  .nav-link {
+    color: #475569;
+    font-weight: 500;
+    position: relative;
+  }
+  
+  .nav-link:hover,
+  .nav-link:active {
+    color: #000;
+  }
+  
+  .offcanvas {
+    max-width: 80%;
+  }
+
+  .offcanvas-title{
+    color: #0e7490;
+    font-weight: 700;
+  }
+  
+  @media (min-width: 991px) {
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: #0e7490;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+    }
+  
+    .nav-link:hover::before {
+      width: 100%;
+      visibility: visible;
+    }
+  }

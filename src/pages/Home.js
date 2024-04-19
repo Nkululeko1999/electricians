@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar';
 import Header from '../components/Header';
 import Info from '../components/Info';
-import Quote from '../components/Quote';
 import Projects from '../components/Projects';
 import FadeLoader from "react-spinners/FadeLoader";
 import Footer from '../components/Footer';
@@ -34,7 +33,6 @@ function Home() {
           <Navbar />
           <Header />
           <Info />
-          <Quote />
           <Projects />
           <Footer />
         </>

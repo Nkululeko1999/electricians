@@ -1,0 +1,14 @@
+/* ###################################### Start: Contact ###################################### */
+
+.contact-container {
+    margin-top: 10rem;
+  }
+  
+  .contact-card:hover {
+    background-color: #334155;
+    color: #fff;
+    transition: all 0.35s;
+    cursor: pointer;
+  }
+  
+  /* ###################################### End: Contact ###################################### */
