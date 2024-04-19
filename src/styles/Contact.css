@@ -1,14 +1,77 @@
 /* ###################################### Start: Contact ###################################### */
-
 .contact-container {
-    margin-top: 10rem;
+  background-image: linear-gradient(
+    to right,
+    #083344,
+    #164e63,
+    #155e75,
+    #0f766e,
+    #0284c7,
+    #075985
+  );
+
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.address-card,
+.email-card,
+.phone-card {
+  opacity: 0.9;
+}
+
+.contact-card:hover {
+  transition: all 0.35s;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.contact-nav {
+  position: absolute;
+  top: -30px;  
+  left: 30px;
+  display: flex; 
+  justify-content: space-between; 
+  background-image: -webkit-linear-gradient(top, #083344, #115e59);
+  background-image: -moz-linear-gradient(top, #083344, #115e59);
+  background-image: -ms-linear-gradient(top, #083344, #115e59);
+  background-image: -o-linear-gradient(top, #083344, #115e59);
+  background-image: linear-gradient(to bottom, #083344, #115e59);
+  width: 90%;
+  padding: 8px; 
+  margin: 0 auto;
+  border-radius: 60px;
+}
+
+.nav-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; 
+  padding: 10px;
+  width: 50%; 
+  font-weight: 600;
+  margin-right: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-div:hover {
+  background-color: #fff;
+  color: #000;
+  opacity: 0.8;
+  border-radius: 60px;
+  cursor: pointer;
+}
+
+.active-contact-nav {
+  background-color: #fff;
+  color: #000;
+  opacity: 0.9;
+  border-radius: 60px;
+}
+
+@media (max-width: 767px) {
+  .contact-nav {
+    left: 20px;
   }
-  
-  .contact-card:hover {
-    background-color: #334155;
-    color: #fff;
-    transition: all 0.35s;
-    cursor: pointer;
-  }
-  
-  /* ###################################### End: Contact ###################################### */
+}

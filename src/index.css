@@ -32,17 +32,66 @@ code {
   right: 20px;
 }
 
-.form-label {
-  font-size: 1.05rem;
-}
-
 .heading-h2 {
   font-size: 2rem;
   color: #475569;
   margin-bottom: 50px;
 }
 
+.input-outline {
+  outline: none; 
+}
 
+.form-control:focus,
+.form-select:focus {
+  outline: none; 
+  border-color: #032c41; 
+  box-shadow: 0 0 0 4px rgba(1, 51, 58, 0.9); 
+}
+
+
+.decorator-line {
+  border: none;
+  width: 6rem;
+  height: 4px;
+  opacity: 1;
+  margin: 1rem auto;
+}
+
+.top-space {
+  margin-top: 8rem;
+}
+
+
+button.submit-btn {
+  background: #3498db;
+  border: none;
+  background-image: -webkit-linear-gradient(top, #083344, #115e59);
+  background-image: -moz-linear-gradient(top, #083344, #115e59);
+  background-image: -ms-linear-gradient(top, #083344, #115e59);
+  background-image: -o-linear-gradient(top, #083344, #115e59);
+  background-image: linear-gradient(to bottom, #083344, #115e59);
+  -webkit-border-radius: 28px;
+  -moz-border-radius: 28px;
+  border-radius: 28px;
+  width: 100%;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  transition: background-image 0.3s ease;
+}
+
+button.submit-btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #083344);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #083344);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #083344);
+  background-image: -o-linear-gradient(top, #3cb0fd, #083344);
+  background-image: linear-gradient(to bottom, #3cb0fd, #083344);
+  text-decoration: none;
+}
 
 
 /* ###################################### Spinner ###################################### */

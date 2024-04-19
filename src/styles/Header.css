@@ -33,7 +33,7 @@
     opacity: 0.8;
   }
   
-  .get-quote-btn {
+  .get-started-btn {
     background-color: transparent;
     border: 3px solid #0891b2;
     color: #fff;
@@ -44,7 +44,7 @@
     margin-top: 1.75rem;
   }
   
-  .get-quote-btn:hover {
+  .get-started-btn:hover {
     border: 3px solid #fff;
     color: #fff;
     transition: all 0.3s;
@@ -78,7 +78,7 @@
     animation: transitionInFromBottom 0.8s ease-in-out forwards;
   }
   
-  .get-quote-btn {
+  .get-started-btn {
     animation: transitionInFromBottom 0.8s ease-in-out forwards;
   }
   

@@ -13,7 +13,7 @@ export default function Header() {
             </p>
             
               <NavLink to='/quote'>
-                <button className='get-quote-btn'>GET A QUOTE</button>
+                <button className='get-started-btn'>Get Started</button>
               </NavLink>
         </div>
     </div>

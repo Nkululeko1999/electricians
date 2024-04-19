@@ -8,15 +8,6 @@
     margin-bottom: 5rem;
   }
   
-  .decorator-line {
-    border: none;
-    width: 9rem;
-    height: 4px;
-    background-color: #eab308;
-    opacity: 1;
-    margin: 1rem auto;
-  }
-  
   .about-card {
     border: none;
     min-height: 10rem;
