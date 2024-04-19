@@ -4,10 +4,12 @@ import Footer from "../components/Footer";
 import { useEffect } from "react";
 import GeneralForm from "../components/forms/GeneralForm";
 import BuildForm from "../components/forms/BuildForm";
+import Iframe from "../components/location/Iframe";
 
 function Contact() {
 
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const [generalNav, setGeneralNav] = useState(true);
 
   useEffect(() => {
     const handleResize = () => {
@@ -18,6 +20,14 @@ function Contact() {
       window.removeEventListener("resize", handleResize);
     };
   });
+
+  const generalNavClick = () => {
+    setGeneralNav(true);
+  }
+
+  const buildNavClick = () => {
+    setGeneralNav(false);
+  }
 
  
   return (
@@ -31,7 +41,7 @@ function Contact() {
           <div className="row">
             {/* Column 1 */}
             <div className="col-lg-6 d-flex flex-column">
-              <div className="card shadow-sm mb-4 flex-grow-1 contact-card address-card">
+              <div className="card shadow-sm mb-4 flex-grow-1 contact-card address-card rounded-large">
                 <div className="card-body text-center">
                   <i className="bi bi-geo-alt fs-3 mb-3"></i>
                   <h3 className="card-title my-3">Our Physical Address</h3>
@@ -46,15 +56,7 @@ function Contact() {
                 }`}
                 style={{ height: "100%" }}
               >
-                <iframe
-                  className="embed-responsive-item"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114759.26815675989!2d27.968254248509137!3d-25.993376120793346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956e17f65959cd%3A0x3ac640ff52ccc755!2sMidrand%2C%201685!5e0!3m2!1sen!2sza!4v1713559601596!5m2!1sen!2sza"
-                  style={{ border: 0, height: "100%", width: "100%" }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  title="location"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
+                <Iframe />
               </div>
             </div>
 
@@ -62,7 +64,7 @@ function Contact() {
             <div className="col-lg-6">
               <div className="row mb-5">
                 <div className="col-md-6">
-                  <div className="card shadow-sm mb-4 contact-card email-card">
+                  <div className="card shadow-sm mb-4 contact-card email-card rounded-large">
                     <div className="card-body text-center">
                       <i className="bi bi-envelope fs-3 mb-3"></i>
                       <h3 className="card-title my-3">Email Us</h3>
@@ -73,7 +75,7 @@ function Contact() {
                   </div>
                 </div>
                 <div className="col-md-6">
-                  <div className="card shadow-sm mb-4 contact-card phone-card">
+                  <div className="card shadow-sm mb-4 contact-card phone-card rounded-large">
                     <div className="card-body text-center">
                       <i className="bi bi-telephone fs-3 mb-3"></i>
                       <h3 className="card-title my-3">Call Us</h3>
@@ -86,18 +88,19 @@ function Contact() {
               </div>
 
               {/* Contact Form */}
-              <div className="card relative shadow-sm">
-                <div className="card-body">
-                  <h2 className="card-title my-5">Send general inquiry</h2>
-                  {/* <GeneralForm />  */}
-                  <BuildForm />
+              <div className="card relative shadow-sm rounded-large">
+                <div className="card-body p-4">
+                  <h2 className="card-title my-5">{generalNav? 'Send general inquiry' : `Let's work together`}</h2>
+                  {generalNav? 
+                  (<GeneralForm />) :
+                  (<BuildForm />)}
                 </div>
 
                 <div className="contact-nav">
-                  <div class="nav-div active-contact-nav">
+                  <div className={`nav-div ${generalNav? 'active-contact-nav' : ''}`} onClick={generalNavClick}>
                     <span>General Inquiries</span>
                   </div>
-                  <div class="nav-div">
+                  <div className={`nav-div ${generalNav? '' : 'active-contact-nav'}`} onClick={buildNavClick}>
                     <span>Build with us</span>
                   </div>
                 </div>

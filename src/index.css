@@ -62,6 +62,10 @@ code {
   margin-top: 8rem;
 }
 
+.rounded-large {
+  border-radius: 20px;
+}
+
 
 button.submit-btn {
   background: #3498db;

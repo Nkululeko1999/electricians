@@ -57,7 +57,7 @@ function BuildForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="">
       <div className="mb-3">
         <Input 
             type="text"
