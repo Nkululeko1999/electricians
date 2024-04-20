@@ -1,6 +1,6 @@
-import repairUrl1 from "../components/repair/one.jpg";
-import repairUrl3 from "../components/repair/three.jpg";
-import repairUrl4 from "../components/repair/four.jpg";
+import electricalUrl1 from "../components/repair/one.jpg";
+import electricalUrl3 from "../components/repair/three.jpg";
+import electricalUrl4 from "../components/repair/four.jpg";
 import wiring from "../components/repair/wiring.jpg";
 import plumber from "../components/plumbing/plumber1.jpg";
 import drainage from "../components/plumbing/drainage.jpg";
@@ -9,11 +9,11 @@ import roofing from "../components/plumbing/roofing.jpg";
 
 const projectsData = [
   {
-    src: repairUrl1,
-    status: "repair",
-    title: "Lighting and Repairing",
+    src: electricalUrl1,
+    status: "electrical",
+    title: "Lighting and electricaling",
     message:
-      "Efficient lighting solutions and expert repair services available.",
+      "Efficient lighting solutions and expert electrical services available.",
   },
   {
     src: plumber,
@@ -23,8 +23,8 @@ const projectsData = [
       "Professional pipe installation and maintenance services for your convenience.",
   },
   {
-    src: repairUrl3,
-    status: "repair",
+    src: electricalUrl3,
+    status: "electrical",
     title: "Electrical Wiring Upgrade",
     message:
       "Upgrade your electrical wiring for improved safety and efficiency.",
@@ -32,13 +32,13 @@ const projectsData = [
   {
     src: roofing,
     status: "plumbing",
-    title: "Leak Detection and Repair",
+    title: "Leak Detection and electrical",
     message:
-      "Expert leak detection and repair services to safeguard your property.",
+      "Expert leak detection and electrical services to safeguard your property.",
   },
   {
-    src: repairUrl3,
-    status: "repair",
+    src: electricalUrl3,
+    status: "electrical",
     title: "Appliance Installation",
     message:
       "Professional appliance installation services for seamless integration.",
@@ -51,8 +51,8 @@ const projectsData = [
       "Efficient drain cleaning and unclogging services to keep your pipes clear.",
   },
   {
-    src: repairUrl4,
-    status: "repair",
+    src: electricalUrl4,
+    status: "electrical",
     title: "Circuit Breaker Replacement",
     message: "Replace old circuit breakers to ensure safety and reliability.",
   },
@@ -65,10 +65,10 @@ const projectsData = [
   },
   {
     src: wiring,
-    status: "repair",
-    title: "Faulty Outlet Repair",
+    status: "electrical",
+    title: "Faulty Outlet electrical",
     message:
-      "Quick and reliable repair of faulty electrical outlets for your convenience.",
+      "Quick and reliable electrical of faulty electrical outlets for your convenience.",
   },
 ];
 

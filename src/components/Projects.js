@@ -17,7 +17,7 @@ function Projects() {
       
       <div className="project-navigation my-5">
         <button className={filter === 'all' ? 'active' : ''} onClick={() => handleFilterChange('all')}>All</button>
-        <button className={filter === 'repair' ? 'active' : ''} onClick={() => handleFilterChange('repair')}>Repair</button>
+        <button className={filter === 'electrical' ? 'active' : ''} onClick={() => handleFilterChange('electrical')}>Electrical</button>
         <button className={filter === 'plumbing' ? 'active' : ''} onClick={() => handleFilterChange('plumbing')}>Plumbing</button>
       </div>
       
