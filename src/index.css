@@ -3,6 +3,7 @@
 @import url('./styles/Navbar.css');
 @import url('./styles/Header.css');
 @import url('./styles/AppBreadcrump.css');
+@import url('./styles/FAQ.css');
 @import url('./styles/Footer.css');
 @import url('./styles/Info.css');
 @import url('./styles/Projects.css');
@@ -95,11 +96,11 @@ button.submit-btn {
 
 button.submit-btn:hover {
   background: #3cb0fd;
-  background-image: -webkit-linear-gradient(top, #3cb0fd, #083344);
-  background-image: -moz-linear-gradient(top, #3cb0fd, #083344);
-  background-image: -ms-linear-gradient(top, #3cb0fd, #083344);
-  background-image: -o-linear-gradient(top, #3cb0fd, #083344);
-  background-image: linear-gradient(to bottom, #3cb0fd, #083344);
+  background-image: -webkit-linear-gradient(top, #064d7c, #083344);
+  background-image: -moz-linear-gradient(top, #064d7c, #083344);
+  background-image: -ms-linear-gradient(top, #064d7c, #083344);
+  background-image: -o-linear-gradient(top, #064d7c, #083344);
+  background-image: linear-gradient(to bottom, #064d7c, #083344);
   text-decoration: none;
 }
 
