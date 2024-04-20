@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg fixed-top">
+    <nav className="navbar navbar-expand-lg">
       <div class="container">
         <NavLink to='/' className="navbar-brand me-auto">Logo</NavLink>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">

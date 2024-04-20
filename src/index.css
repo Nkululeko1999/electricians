@@ -1,4 +1,5 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+@import url('./styles/Topbar.css');
 @import url('./styles/Navbar.css');
 @import url('./styles/Header.css');
 @import url('./styles/AppBreadcrump.css');
@@ -13,6 +14,7 @@
 
 body {
   margin: 0;
+  overflow-y: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -96,6 +98,11 @@ button.submit-btn:hover {
   background-image: -o-linear-gradient(top, #3cb0fd, #083344);
   background-image: linear-gradient(to bottom, #3cb0fd, #083344);
   text-decoration: none;
+}
+
+.overflow-hidden {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 

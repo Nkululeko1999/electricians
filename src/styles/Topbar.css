@@ -1,0 +1,32 @@
+.topbar {
+    background-color: #0e7490;
+}
+
+.topbar-box {
+    margin-right: 2rem;
+}
+
+.topbar-icons {
+    margin-right: 0.5rem;
+}
+
+.scrolling-text {
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite; 
+    font-style: italic;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+.scrolling-text span {
+    padding-right: 1em; 
+}
+
+  

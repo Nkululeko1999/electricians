@@ -28,7 +28,7 @@ function Footer() {
               <br />
             </address>
             <p className="mb-0"><span>Phone:</span> 078 937 6656 / 063 571 7049 </p>
-            <p><span>Email:</span> moseskhanyelihle3@gmaim.com</p>
+            <p><span>Email:</span> moseskhanyelihle3@gmail.com</p>
           </div>
           <div className="col-md-3 useful-links">
             <h5>Useful Links</h5>
