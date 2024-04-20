@@ -21,7 +21,7 @@ function Topbar() {
                 </div>
             </div>
             <div className="col-lg-6 text-center text-lg-end scrolling-text-container">
-                <div className="d-flex align-items-center justify-content-start overflow-hidden text-white scrolling-text">
+                <div className="d-flex align-items-center justify-content-start text-white scrolling-text">
                     <span>"Industrial Commercial Domestic"</span>
                     <span>"Faults"</span>    
                     <span>"Maintenance"</span>

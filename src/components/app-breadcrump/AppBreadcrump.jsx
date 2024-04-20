@@ -5,11 +5,11 @@ function AppBreadcrump(props) {
     const { heading } = props;
 
   return (
-    <div className='container-fluid breadcrump-container'>
-      <div className='container flex justify-content-center items-center'>
-        <h3>{heading}</h3>
+    <div class="container-fluid bg-breadcrumb">
+      <div class="container text-center py-5" style={{maxWidth: "900px"}}>
+          <h1 class="text-white mb-4 breadcrump-heading">{heading}</h1> 
       </div>
-    </div>
+    </div>    
   )
 }
 

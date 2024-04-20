@@ -1,16 +1,7 @@
 .info-container {
-  background-image: linear-gradient(
-    to right,
-    #083344,
-    #164e63,
-    #155e75,
-    #0f766e,
-    #0284c7,
-    #075985
-  );
-
   padding-top: 3rem;
   padding-bottom: 7rem;
+  background-color: #f8f6f6;
 }
 
 .info-card {
@@ -24,8 +15,11 @@
   background-color: #0c4a6e;
 }
 
-p.lead {
+p.info-text {
   width: 75%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 20px;
+  font-weight: 500;
   text-align: center;
 }
 
@@ -72,3 +66,4 @@ p.lead {
     background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
     text-decoration: none;
   }
+

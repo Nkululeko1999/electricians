@@ -34,7 +34,7 @@ function Contact() {
   return (
     <>
       <Navbar />
-      <AppBreadcrump heading="Contact Us" />
+      <AppBreadcrump heading="Contact" />
       <div className="container-fluid contact-container">
         <div className="container">
           <div className="row">

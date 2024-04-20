@@ -1,13 +1,16 @@
-import Footer from './Footer';
-import Navbar from './Navbar';
+import Footer from "../components/Footer";
+import Navbar from "../components/Navbar";
+import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
+
+
 
 export default function Services() {
 
   return (
     <>
     <Navbar />
+    <AppBreadcrump heading="Services" />
     <div className="container services-container">
-      <h2 className='text-center service-heading'>Our Services <hr className='decorator-line' /></h2>
       <div className="row">
         {/* Wiring Services */}
         <div className="col-md-3 mb-4">

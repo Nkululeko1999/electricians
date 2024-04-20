@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar";
 import imgUrl from "../components/repair/four.jpg";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
+import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
 
 function About() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -20,10 +21,8 @@ function About() {
   return (
     <>
       <Navbar />
+      <AppBreadcrump heading="About" />
       <div className="container about-container">
-        <h2 className="about-heading text-center">
-          About Us <hr className="decorator-line" />
-        </h2>
         <div className="row">
           {/* First Row */}
           <div className="col-lg-3 col-md-4">

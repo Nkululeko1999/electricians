@@ -2,7 +2,6 @@
 /* ###################################### Start Header ###################################### */
 .header {
     height: 100vh;
-    overflow-x: hidden;
     background: url("../../public/images/headerImg.jpg") no-repeat;
     background-size: cover;
     width: 100%;
@@ -77,16 +76,16 @@
     }
   }
   
-  h1 {
-    animation: transitionInFromTop 0.8s ease-in-out forwards;
+  .header-info h1 {
+    animation: transitionInFromTop 1s ease-in-out forwards;
   }
   
   .header p {
-    animation: transitionInFromBottom 0.8s ease-in-out forwards;
+    animation: transitionInFromBottom 1s ease-in-out forwards;
   }
   
   .get-started-btn {
-    animation: transitionInFromBottom 0.8s ease-in-out forwards;
+    animation: transitionInFromBottom 1.55s ease-in-out forwards;
   }
   
   /* ###################################### End Header ###################################### */

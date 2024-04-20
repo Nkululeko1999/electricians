@@ -2,14 +2,9 @@
 /* ###################################### Start: Services ###################################### */
 
 .services-container {
-    margin-top: 10rem;
+    margin-top: 4rem;
   }
   
-  h2.service-heading {
-    font-size: 2rem;
-    color: #475569;
-    margin-bottom: 50px;
-  }
   
   .service-card {
     min-height: 14rem;
