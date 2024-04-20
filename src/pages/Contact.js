@@ -5,6 +5,7 @@ import { useEffect } from "react";
 import GeneralForm from "../components/forms/GeneralForm";
 import BuildForm from "../components/forms/BuildForm";
 import Iframe from "../components/location/Iframe";
+import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
 
 function Contact() {
 
@@ -33,11 +34,9 @@ function Contact() {
   return (
     <>
       <Navbar />
+      <AppBreadcrump heading="Contact Us" />
       <div className="container-fluid contact-container">
         <div className="container">
-          <h2 className="heading-h2 text-white text-center mb-5">
-            Contact Us <hr className="decorator-line bg-light" />
-          </h2>
           <div className="row">
             {/* Column 1 */}
             <div className="col-lg-6 d-flex flex-column">
@@ -51,8 +50,8 @@ function Contact() {
                 </div>
               </div>
               <div
-                className={`embed-responsive embed-responsive-4by3 flex-grow-1 mt-5 ${
-                  windowWidth < 992 ? "mb-4" : ""
+                className={`embed-responsive embed-responsive-4by3 flex-grow-1  ${
+                  windowWidth < 992 ? "mb-4" : "mt-5"
                 }`}
                 style={{ height: "100%" }}
               >

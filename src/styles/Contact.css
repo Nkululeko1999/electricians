@@ -1,15 +1,5 @@
 /* ###################################### Start: Contact ###################################### */
 .contact-container {
-  background-image: linear-gradient(
-    to right,
-    #083344,
-    #164e63,
-    #155e75,
-    #0f766e,
-    #0284c7,
-    #075985
-  );
-
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
