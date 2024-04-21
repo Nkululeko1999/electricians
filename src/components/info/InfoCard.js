@@ -1,22 +1,24 @@
-import React from 'react';
-import imgUrl from '../repair/one.jpg'
-
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 function InfoCard(props) {
-
-    const { heading } = props;
+  const { imgUrl, heading, text, btnText, link } = props;
 
   return (
-    <div className="card h-100 info-card">
-      <img src={imgUrl} className="" alt="Card" />
-      <div className="card-body info-card-body">
-        <h3 className="card-title text-white">{heading}</h3>
-        <p className="card-text text-white">
-            With over a decade of industry experience, trust our seasoned professionals to handle your plumbing 
-            and electrical needs with expertise.
-        </p>
-        <button className="btn-card">Button</button>
+    <div class="info-item shadow rounded h-100">
+      <div class="info-img rounded-top">
+        <img src={imgUrl} class="img-fluid rounded-top w-100" alt="service" />
+      </div>
+      <div class="service-content rounded-bottom bg-light p-4">
+        <div>
+          <h5 class="mb-4">{heading}</h5>
+          <p class="mb-4">{text}</p>
+          <Link to={link}
+            class="rounded-pill text-white info-btn"
+          >
+            {btnText}
+          </Link>
+        </div>
       </div>
     </div>
   );

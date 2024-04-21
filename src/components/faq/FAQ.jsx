@@ -183,7 +183,7 @@ function FAQ() {
           </div>
           <div class="col-lg-5 align-self-center">
             <div class="faq-heading-box">
-              <h4>Never Get Stranded, We got you.</h4>
+              <h4 className="my-5">Never Get Stranded, We got you.</h4>
               <h1>Why be stranded? Click once and live comfortably.</h1>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
