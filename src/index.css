@@ -74,6 +74,14 @@ code {
   border-radius: 20px;
 }
 
+.no-display {
+  display: none;
+}
+
+.align-right {
+  text-align: right;
+}
+
 
 button.submit-btn {
   background: #3498db;

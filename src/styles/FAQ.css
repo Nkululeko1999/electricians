@@ -1,15 +1,3 @@
-.faq-heading-box h1 {
-  font-size: 1.5rem;
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
-.faq-heading-box h4 {
-  font-style: italic;
-  margin: 1.15rem 0;
-}
-
-
 .faq {
   position: relative;
   padding: 0px;
@@ -18,6 +6,7 @@
 
 .faq-heading {
   margin: 5rem 0;
+  color: #fff;
 }
 
 .faq:before {
@@ -28,8 +17,9 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  background-color: #f4f6f6;
+  background-color: #0e7490;
   content: "";
+  border-top-left-radius: 60%;
 }
 
 .accordion {

@@ -1,12 +1,28 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import faqImg from "../repair/three.jpg";
+
 
 function FAQ() {
+
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <div class="faq">
       <div class="container">
         <div class="row">
-          <h2 className="text-center faq-heading">
+          <h2 className={`faq-heading ${screenWidth < 768 ? "align-right" : "text-center"}`}>
             Frequently Asked Questions
           </h2>
           <div class="col-lg-6 offset-lg-1">
@@ -14,11 +30,11 @@ function FAQ() {
               <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
                   <button
-                    class="accordion-button"
+                    class="accordion-button collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
-                    aria-expanded="true"
+                    aria-expanded="false"
                     aria-controls="collapseOne"
                   >
                     Accordion Item #1
@@ -26,7 +42,7 @@ function FAQ() {
                 </h2>
                 <div
                   id="collapseOne"
-                  class="accordion-collapse collapse show"
+                  class="accordion-collapse collapse"
                   aria-labelledby="headingOne"
                   data-bs-parent="#accordionExample"
                 >
@@ -131,70 +147,16 @@ function FAQ() {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSix">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSix"
-                    aria-expanded="false"
-                    aria-controls="collapseSix"
-                  >
-                    Accordion Item #6
-                  </button>
-                </h2>
-                <div
-                  id="collapseSix"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingSix"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    This is the sixth item's accordion body.
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-item">
-                <h2 class="accordion-header" id="headingSeven">
-                  <button
-                    class="accordion-button collapsed"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#collapseSeven"
-                    aria-expanded="false"
-                    aria-controls="collapseSeven"
-                  >
-                    Accordion Item #7
-                  </button>
-                </h2>
-                <div
-                  id="collapseSeven"
-                  class="accordion-collapse collapse"
-                  aria-labelledby="headingSeven"
-                  data-bs-parent="#accordionExample"
-                >
-                  <div class="accordion-body">
-                    This is the seventh item's accordion body.
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-          <div class="col-lg-5 align-self-center">
-            <div class="faq-heading-box">
-              <h4 className="my-5">Never Get Stranded, We got you.</h4>
-              <h1>Why be stranded? Click once and live comfortably.</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
-                ipsum suspendisse ultrices gravid risus commodo.
-              </p>
-              <button class="submit-btn">
-                <Link className="text-white" to="/contact-us">
-                  Contact Us
-                </Link>
-              </button>
+          <div class="" className={screenWidth < 768 ? "no-display " : "col-lg-5 align-self-center"}>
+            <div class="about-img pb-5 ps-5">
+              <img
+                src={faqImg}
+                class="img-fluid rounded w-100"
+                style={{ objectFit: "cover" }}
+                alt="km construction"
+              />
             </div>
           </div>
         </div>
