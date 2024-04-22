@@ -6,9 +6,9 @@ import GeneralForm from "../components/forms/GeneralForm";
 import BuildForm from "../components/forms/BuildForm";
 import Iframe from "../components/location/Iframe";
 import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
+import Topbar from "../components/topbar/Topbar";
 
 function Contact() {
-
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const [generalNav, setGeneralNav] = useState(true);
 
@@ -24,15 +24,15 @@ function Contact() {
 
   const generalNavClick = () => {
     setGeneralNav(true);
-  }
+  };
 
   const buildNavClick = () => {
     setGeneralNav(false);
-  }
+  };
 
- 
   return (
     <>
+      <Topbar />
       <Navbar />
       <AppBreadcrump heading="Contact" />
       <div className="container-fluid contact-container">
@@ -89,17 +89,29 @@ function Contact() {
               {/* Contact Form */}
               <div className="card relative shadow-sm rounded-large">
                 <div className="card-body p-4">
-                  <h2 className="card-title my-5">{generalNav? 'Send general inquiry' : `Let's work together`}</h2>
-                  {generalNav? 
-                  (<GeneralForm />) :
-                  (<BuildForm />)}
+                  <h2 className="card-title my-5">
+                    {generalNav
+                      ? "Send general inquiry"
+                      : `Let's work together`}
+                  </h2>
+                  {generalNav ? <GeneralForm /> : <BuildForm />}
                 </div>
 
                 <div className="contact-nav">
-                  <div className={`nav-div ${generalNav? 'active-contact-nav' : ''}`} onClick={generalNavClick}>
+                  <div
+                    className={`nav-div ${
+                      generalNav ? "active-contact-nav" : ""
+                    }`}
+                    onClick={generalNavClick}
+                  >
                     <span>General Inquiries</span>
                   </div>
-                  <div className={`nav-div ${generalNav? '' : 'active-contact-nav'}`} onClick={buildNavClick}>
+                  <div
+                    className={`nav-div ${
+                      generalNav ? "" : "active-contact-nav"
+                    }`}
+                    onClick={buildNavClick}
+                  >
                     <span>Build with us</span>
                   </div>
                 </div>

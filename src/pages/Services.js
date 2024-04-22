@@ -3,12 +3,12 @@ import Navbar from "../components/Navbar";
 import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
 import ServiceCard from "../components/cards/ServiceCard";
 import industrialDomesticImg from "../components/repair/wiring.jpg";
-
-
+import Topbar from "../components/topbar/Topbar";
 
 export default function Services() {
   return (
     <>
+      <Topbar />
       <Navbar />
       <AppBreadcrump heading="Services" />
 

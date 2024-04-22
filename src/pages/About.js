@@ -4,6 +4,7 @@ import imgUrl from "../components/repair/four.jpg";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
 import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
+import Topbar from "../components/topbar/Topbar";
 
 function About() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -20,6 +21,7 @@ function About() {
 
   return (
     <>
+      <Topbar />
       <Navbar />
       <AppBreadcrump heading="About" />
       <div className="container about-container">
@@ -28,17 +30,19 @@ function About() {
           <div className="col-lg-3 col-md-4">
             <div className="card text-center mb-3 h-100 about-card">
               <div className="card-body">
-                <i className="bi bi-clock-history fs-3 mb-3"></i>
-                <h5 className="card-title">Years of Experience</h5>
+                <i class="bi bi-tools fs-3 mb-3"></i>
+                <h5 className="card-title">Sercices</h5>
               </div>
               <div className="inner-card d-flex justify-content-center align-items-center">
-                <p className="number mb-0">10 Years</p>
+                <p className="number mb-0">10+ Services</p>
               </div>
             </div>
           </div>
           <div className="col-lg-3 col-md-4 mt-4">
             <div
-              className={`card text-center mb-3 h-100 about-card ${windowWidth < 992 ? "mb-5" : ""}`}
+              className={`card text-center mb-3 h-100 about-card ${
+                windowWidth < 992 ? "mb-5" : ""
+              }`}
             >
               <div className="card-body">
                 <i className="bi bi-clock fs-3 mb-3"></i>
@@ -78,18 +82,22 @@ function About() {
           <div className="col-md-6">
             <h3 className="mb-4">Our Story</h3>
             <p className="story">
-              Welcome to [Company Name], your premier destination for
+              Welcome to KM Electrical Contruction, your premier destination for
               exceptional electrical and plumbing services in
-              [Location/City/Region]. With years of industry expertise, our
+              Gauteng, Midrand. With years of industry expertise, our
               skilled team delivers top-notch craftsmanship and unparalleled
-              customer satisfaction. From electrical repairs to plumbing
-              installations, we handle every project with precision and care.{" "}
-              <br /> <br /> Our commitment to transparency ensures upfront
+              customer satisfaction. 
+              <br /> <br />
+              From electrical repairs to plumbing
+              installations, we handle every project with precision and care.
+              Our commitment to transparency ensures upfront
               pricing and honest assessments, so you can trust us every step of
-              the way. Safety is our priority, and we adhere to the highest
+              the way. 
+              <br /> <br />
+              Safety is our priority, and we adhere to the highest
               industry standards to deliver reliable, long-lasting results.
               Whether you're a homeowner, business owner, or property manager,
-              count on [Company Name] for all your electrical and plumbing
+              count on KM Electrical Construction for all your electrical and plumbing
               needs.
             </p>
           </div>
