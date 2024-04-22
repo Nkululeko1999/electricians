@@ -4,7 +4,8 @@ import imgUrl from "../components/repair/four.jpg";
 import Footer from "../components/Footer";
 import { useState, useEffect } from "react";
 import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
-import Topbar from "../components/topbar/Topbar";
+
+
 
 function About() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -21,7 +22,6 @@ function About() {
 
   return (
     <>
-      <Topbar />
       <Navbar />
       <AppBreadcrump heading="About" />
       <div className="container about-container">

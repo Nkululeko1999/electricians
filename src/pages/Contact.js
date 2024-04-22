@@ -6,7 +6,8 @@ import GeneralForm from "../components/forms/GeneralForm";
 import BuildForm from "../components/forms/BuildForm";
 import Iframe from "../components/location/Iframe";
 import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
-import Topbar from "../components/topbar/Topbar";
+
+
 
 function Contact() {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
@@ -32,7 +33,6 @@ function Contact() {
 
   return (
     <>
-      <Topbar />
       <Navbar />
       <AppBreadcrump heading="Contact" />
       <div className="container-fluid contact-container">

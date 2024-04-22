@@ -8,7 +8,6 @@ import Topbar from './topbar/Topbar';
 export default function Header() {
   return (
     <div className='header relative'>
-      <Topbar />
       <Navbar />
       <div className='container d-flex align-items-center justify-content-center fs-1 text-white flex-column header-info'>
           <h1 className='text-center'>KM ELECTRICAL CONSTRUCTION</h1>

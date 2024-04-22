@@ -12,8 +12,9 @@
 
 .contact-card:hover {
   transition: all 0.35s;
+  background-color: #083344;
+  color: #fff;
   cursor: pointer;
-  opacity: 0.6;
 }
 
 .contact-nav {

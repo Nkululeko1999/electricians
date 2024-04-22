@@ -6,10 +6,12 @@ import About from './pages/About';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Services from './pages/Services';
+import Topbar from './components/topbar/Topbar';
 
 function App() {
   return (
     <BrowserRouter>
+      <Topbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact-us' element={<Contact />} />

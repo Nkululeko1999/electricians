@@ -18,7 +18,7 @@ function Topbar() {
                         <i class="bi bi-geo-alt-fill topbar-icons"></i>
                         <span>Our Location</span>
                     </div>
-                    {isHovered && <div className='px-3 py-4 location rounded'>
+                    {isHovered && <div className='p-3 location rounded'>
                             <span>8832 Shukuma Street</span> <br />
                             <span>Midrand, Johannesburg</span> <br />
                             <span>1685</span>

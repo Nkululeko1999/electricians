@@ -24,7 +24,7 @@ function Projects() {
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {filteredProjects.map((project, index) => (
           <div className="col" key={index}>
-            <div className="project">
+            <div className="project rounded">
               <img src={project.src} alt={project.title} className="project-image" />
               <div className="project-overlay">
                 <div className="project-title">{project.title}</div>
