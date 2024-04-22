@@ -1,100 +1,131 @@
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
+import ServiceCard from "../components/cards/ServiceCard";
+import industrialDomesticImg from "../components/repair/wiring.jpg";
 
 
 
 export default function Services() {
-
   return (
     <>
-    <Navbar />
-    <AppBreadcrump heading="Services" />
-    <div className="container services-container">
-      <div className="row">
-        {/* Wiring Services */}
-        <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card rounded-3">
-            <div className="card-body">
-              <i className='bi bi-lightning mb-3 service-icons'></i>
-              <h3 className='card-title'>Wiring Services</h3>
-              <p className="card-text">Professional wiring services for residential and commercial properties.</p>
-            </div>
-          </div>
+      <Navbar />
+      <AppBreadcrump heading="Services" />
+
+      <div className="services-header my-5">
+        <div>
+          <h3 className="mb-3 text-center">What We Do </h3>
         </div>
-        {/* Circuit Services */}
-        <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card rounded-3">
-            <div className="card-body">
-              <i className="bi bi-lightning mb-3  service-icons"></i>
-              <h3 className='card-title'>Circuit Services</h3>
-              <p className="card-text">Expert circuit installation and troubleshooting.</p>
-            </div>
+        <h1 className="display-5 mb-4 w-50 text-center">
+          Multitude of Services Provided by Our Expert Team
+        </h1>
+        <p className="mb-0 w-75 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
+          deleniti amet at atque sequi quibusdam cumque itaque repudiandae
+          temporibus, eius nam mollitia voluptas maxime veniam necessitatibus
+          saepe in ab? Repellat!
+        </p>
+      </div>
+
+      <div className="container services-container">
+        <div class="row g-4 justify-content-center">
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Industrial Commercial Domestic"
+              imgSrc={industrialDomesticImg}
+              description="Professional wiring services for residential and commercial properties."
+            />
           </div>
-        </div>
-        {/* Lighting Services */}
-        <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card rounded-3">
-            <div className="card-body">
-              <i className="bi bi-lightbulb mb-3  service-icons"></i>
-              <h3 className='card-title'>Lighting Services</h3>
-              <p className="card-text">Comprehensive lighting solutions for indoor and outdoor spaces.</p>
-            </div>
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Faults"
+              imgSrc={industrialDomesticImg}
+              description="Expert circuit installation and troubleshooting."
+            />
           </div>
-        </div>
-        {/* Outlet and Switch Services */}
-        <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card rounded-3">
-            <div className="card-body">
-              <i className="bi bi-plug mb-3  service-icons"></i>
-              <h3 className='card-title'>Outlet and Switch Services</h3>
-              <p className="card-text">Installation and repair of outlets and switches for homes and businesses.</p>
-            </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Maintenance"
+              imgSrc={industrialDomesticImg}
+              description="Professional wiring services for residential and commercial properties."
+            />
           </div>
-        </div>
-        {/* Drain Cleaning */}
-        <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card rounded-3">
-            <div className="card-body">
-              <i class="bi bi-water service-icons"></i>
-              <h3 className='card-title'>Drain Cleaning</h3>
-              <p className="card-text">Professional drain cleaning services to keep your plumbing system flowing smoothly.</p>
-            </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Generators"
+              imgSrc={industrialDomesticImg}
+              description="Expert circuit installation and troubleshooting."
+            />
           </div>
-        </div>
-        {/* Fixture Installation and Repair */}
-        <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card rounded-3">
-            <div className="card-body">
-              <i className="bi bi-tools mb-3  service-icons"></i>
-              <h3 className='card-title'>Fixture Installation and Repair</h3>
-              <p className="card-text">Installation and repair of fixtures including sinks, toilets, and showers.</p>
-            </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Appliances"
+              imgSrc={industrialDomesticImg}
+              description="Professional wiring services for residential and commercial properties."
+            />
           </div>
-        </div>
-        {/* Pipe Repairs and Replacements */}
-        <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card rounded-3">
-            <div className="card-body">
-              <i class="bi bi-sliders service-icons"></i>
-              <h3 className='card-title'>Pipe Repairs and Replacements</h3>
-              <p className="card-text">Expert pipe repair and replacement services for residential and commercial properties.</p>
-            </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Complaince Testing"
+              imgSrc={industrialDomesticImg}
+              description="Expert circuit installation and troubleshooting."
+            />
           </div>
-        </div>
-        {/* Leak Detection and Repair */}
-        <div className="col-md-3 mb-4">
-          <div className="card text-center h-100 service-card rounded-3">
-            <div className="card-body">
-              <i className="bi bi-droplet mb-3  service-icons"></i>
-              <h3 className='card-title'>Leak Detection and Repair</h3>
-              <p className="card-text">Professional leak detection and repair services to prevent water damage.</p>
-            </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="HV Equipments"
+              imgSrc={industrialDomesticImg}
+              description="Professional wiring services for residential and commercial properties."
+            />
+          </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Leads Process"
+              imgSrc={industrialDomesticImg}
+              description="Expert circuit installation and troubleshooting."
+            />
+          </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Lines Control Wiring "
+              imgSrc={industrialDomesticImg}
+              description="Professional wiring services for residential and commercial properties."
+            />
+          </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Switch Boards"
+              imgSrc={industrialDomesticImg}
+              description="Expert circuit installation and troubleshooting."
+            />
+          </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Pumps"
+              imgSrc={industrialDomesticImg}
+              description="Professional wiring services for residential and commercial properties."
+            />
+          </div>
+
+          <div className="col-12 col-md-3">
+            <ServiceCard
+              heading="Lighting"
+              imgSrc={industrialDomesticImg}
+              description="Expert circuit installation and troubleshooting."
+            />
           </div>
         </div>
       </div>
-    </div>
-    <Footer />
+      <Footer />
     </>
   );
 }
