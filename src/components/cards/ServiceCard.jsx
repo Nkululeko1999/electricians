@@ -4,14 +4,14 @@ import { Link } from "react-router-dom";
 
 
 function ServiceCard(props) {
-  const { heading, imgSrc, description, link } = props;
+  const { heading, imgSrc, description, id } = props; 
 
   return (
     <div class="info-item shadow rounded h-100">
       <div class="info-img service-box-img rounded-top">
         <img src={imgSrc} class="img-fluid rounded-top w-100" alt="service" />
         <div className="btn-overlay">
-          <Link to={link} class="rounded-pill text-white info-btn">
+          <Link to={`/service/${id}`} className="rounded-pill text-white info-btn">
             View More
           </Link>
         </div>

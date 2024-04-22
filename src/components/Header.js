@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import Navbar from './Navbar';
-import Topbar from './topbar/Topbar';
 
 
 
@@ -17,7 +16,7 @@ export default function Header() {
               deliver superior solutions tailored to your needs, ensuring satisfaction and peace of mind.
           </p>
           
-            <NavLink to='/quote'>
+            <NavLink to='/contact-us'>
               <button className='get-started-btn'>Get Started</button>
             </NavLink>
       </div>

@@ -32,11 +32,11 @@ footer {
     padding: 4px;
     border-radius: 4px;
     background-color: #fff;
-    color: #facc15;
+    color: #0e7490;
   }
   
   footer ul li .footer-icons:hover {
-    background-color: #facc15;
+    background-color: #0e7490;
     color: #fff;
     transition: all 0.3s;
   }
@@ -50,7 +50,7 @@ footer {
   
   footer .footer-links:hover {
     text-decoration: underline;
-    color: #facc15;
+    color: #44cff5;
   }
 
 

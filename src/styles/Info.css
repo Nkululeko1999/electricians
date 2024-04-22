@@ -6,6 +6,18 @@
 
 .info-item {
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-content {
+  flex-grow: 1;
+}
+
+.info-link {
+  width: 160px;
+  margin-bottom: 12px;
+  margin-left: 20px;
 }
 
 .info-item:hover {
@@ -81,3 +93,4 @@ p.info-text {
 .info-btn:hover {
   background-color: #164e63;
 }
+
