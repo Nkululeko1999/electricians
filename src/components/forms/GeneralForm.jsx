@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
-import Input from "./Input";
-
-
+import LoadingButton from "../buttons/LoadingButton";
 
 function GeneralForm() {
   const [formData, setFormData] = useState({
@@ -14,6 +12,9 @@ function GeneralForm() {
     message: "",
   });
 
+  const [invalidFields, setInvalidFields] = useState([]);
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevState) => ({
@@ -22,90 +23,165 @@ function GeneralForm() {
     }));
   };
 
+  const validateEmail = (email) => {
+    // Email validation regex
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
+  useEffect(() => {
+    if (!loading) {
+      // Reset form fields when loading state changes back to false
+      setFormData({
+        fName: "",
+        lName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+    }
+  }, [loading]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    let emailFailed = false;
+    // Validate form data
+    const invalidFields = [];
+    for (const field in formData) {
+      if (formData[field].trim() === "") {
+        invalidFields.push(field);
+      }
+    }
+
+    // Validate email format
+    if (!validateEmail(formData.email)) {
+      invalidFields.push("email");
+    }
+
+    setInvalidFields(invalidFields);
+
+    if (invalidFields.length > 0) {
+      toast.error("Please fill in all fields correctly.");
+      return;
+    }
+    setLoading(true);
     try {
       const response = await axios.post(
-        "https://electricians-api.onrender.com/api/auto-responder/send-message",
+        "http://localhost:5000/general-inquiry",
         formData
       );
 
-      console.log("Success:", response.data);
-      toast.success(response.data.message);
-    } catch (error) {
-      if (error.response) {
-        console.error("Server responded with error data:", error.response.data);
-        if (error.response.data.message === "Email format is not correct.") {
-          emailFailed = true;
-        }
-        toast.error(error.response.data.message);
-        console.error("Status code:", error.response.status);
-        console.error("Headers:", error.response.headers);
-      } else if (error.request) {
-        console.error("No response received:", error.request);
-      } else {
-        console.error("Error occurred during request setup:", error.message);
+      const data = response.data;
+
+      if (data.success === false) {
+        toast.error(data.message);
+        
+        setFormData({
+          fName: "",
+          lName: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+ 
+      setLoading(false);
+
+        return;
       }
-    }
-    if (!emailFailed) {
-      setFormData({ fName: "", lName: "", email: "", phone: "", message: "" });
+
+      toast.success(data.message);
+    
+      setLoading(false);
+
+      setFormData({
+        fName: "",
+        lName: "",
+        email: "",
+        phone: "",
+        message: "",
+      });
+
+    } catch (error) {
+      console.error(error);
+      
+      setLoading(false);
     }
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="mb-3">
-        <Input 
-            type="text"
-            name="fName"
-            placeholder="First Name"
-            value={formData.fName}
-            onChange={handleChange}
-
+      <div className={`mb-3 ${invalidFields.includes("fName") && "has-error"}`}>
+        <input
+          type="text"
+          name="fName"
+          placeholder="First Name"
+          value={formData.fName}
+          onChange={handleChange}
+          className={`form-control input-outline ${invalidFields.includes("fName") && "invalid"}`}
         />
+        {invalidFields.includes("fName") && (
+          <div className="invalid-feedback">Please enter your first name.</div>
+        )}
       </div>
-      <div className="mb-3">
-        <Input 
-            type="text"
-            name="lName"
-            placeholder="Last Name"
-            value={formData.lName}
-            onChange={handleChange}
+      <div className={`mb-3 ${invalidFields.includes("lName") && "has-error"}`}>
+        <input
+          type="text"
+          name="lName"
+          value={formData.lName}
+          placeholder="Last Name"
+          onChange={handleChange}
+          className={`form-control input-outline ${invalidFields.includes("lName") && "invalid"}`}
         />
+        {invalidFields.includes("lName") && (
+          <div className="invalid-feedback">Please enter your last name.</div>
+        )}
       </div>
-      <div className="mb-3">
-        <Input 
-            type="email"
-            name="email"
-            placeholder="Last Name"
-            value={formData.lName}
-            onChange={handleChange}
+      <div className={`mb-3 ${invalidFields.includes("email") && "has-error"}`}>
+        <input
+          type="email"
+          name="email"
+          value={formData.email}
+          placeholder="Email"
+          onChange={handleChange}
+          className={`form-control input-outline ${invalidFields.includes("email") && "invalid"}`}
         />
+        {invalidFields.includes("email") && (
+          <div className="invalid-feedback">Please enter a valid email address.</div>
+        )}
       </div>
-      <div className="mb-3">
-        <Input 
-            type="phone"
-            name="phone"
-            placeholder="Phone"
-            value={formData.lName}
-            onChange={handleChange}
+      <div className={`mb-3 ${invalidFields.includes("phone") && "has-error"}`}>
+        <input
+          type="phone"
+          name="phone"
+          value={formData.phone}
+          placeholder="Phone"
+          onChange={handleChange}
+          className={`form-control input-outline ${invalidFields.includes("phone") && "invalid"}`}
         />
+        {invalidFields.includes("phone") && (
+          <div className="invalid-feedback">Please enter a valid phone number.</div>
+        )}
       </div>
       <div className="mb-3">
         <textarea
-          className="form-control"
+          className={`form-control ${invalidFields.includes("message") && "invalid"}`}
           rows="5"
           name="message"
           value={formData.message}
           onChange={handleChange}
           placeholder="Message"
         ></textarea>
+        {invalidFields.includes("message") && (
+          <div className="invalid-feedback">Please enter your message.</div>
+        )}
       </div>
-      <button type="submit" className="submit-btn">
-        Send Message
-      </button>
+      {loading ? (
+        <LoadingButton />
+      ) : (
+        <button type="submit" className="submit-btn">
+          Send Message
+        </button>
+      )}
     </form>
   );
 }

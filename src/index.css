@@ -57,6 +57,12 @@ code {
   box-shadow: 0 0 0 4px rgba(1, 51, 58, 0.9); 
 }
 
+.invalid {
+  outline: none;
+  border-color: rgb(133, 18, 3);
+  box-shadow: 0 0 0 4px rgba(188, 29, 8, 0.9); 
+}
+
 .top-space {
   margin-top: 8rem;
 }
@@ -108,6 +114,13 @@ p {
   font-size: 1rem;
 }
 
+.toast-container {
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px; /* Adjust as needed */
+}
 
 /* ###################################### Spinner ###################################### */
 

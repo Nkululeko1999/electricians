@@ -6,8 +6,7 @@ function Input(props) {
 
   return (
     <input
-          type={type}
-          className="form-control input-outline"
+          type={type}       
           name={name}
           placeholder={placeholder}
           value={value}

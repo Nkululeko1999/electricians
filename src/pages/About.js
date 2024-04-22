@@ -49,7 +49,7 @@ function About() {
                 <h5 className="card-title">Hours of Support</h5>
               </div>
               <div className="inner-card d-flex justify-content-center align-items-center">
-                <p className="number mb-0">24/7</p>
+                <p className="number mb-0">7/7</p>
               </div>
             </div>
           </div>

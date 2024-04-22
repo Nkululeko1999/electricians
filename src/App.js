@@ -24,7 +24,7 @@ function App() {
         <Route path="/services" element={<Services />} />
         <Route path="/service/:id" element={<EachService />} />
       </Routes>
-      <ToastContainer className="custom-toast-container" />
+      <ToastContainer className="toast-container" />
     </BrowserRouter>
   );
 }
