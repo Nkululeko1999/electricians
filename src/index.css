@@ -33,13 +33,6 @@ code {
     monospace;
 }
 
-
-.custom-toast-container {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 .heading-h2 {
   font-size: 2rem;
   color: #475569;
@@ -122,17 +115,18 @@ p {
   right: 20px; /* Adjust as needed */
 }
 
-/* ###################################### Spinner ###################################### */
-
 .home-container {
   min-height: 100vh;
 }
+
+/* ###################################### Spinner ###################################### */
+
 
 .spinner-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 999; /* Ensure the spinner is above other content */
-  padding: 20px; /* Optional padding for the spinner container */
+  z-index: 999; 
+  padding: 20px; 
 }

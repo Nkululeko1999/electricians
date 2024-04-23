@@ -6,9 +6,10 @@ import Navbar from './Navbar';
 
 export default function Header() {
   return (
-    <div className='header relative'>
-      <Navbar />
-      <div className='container d-flex align-items-center justify-content-center fs-1 text-white flex-column header-info'>
+   <>
+     <Navbar />
+    <div className='header d-flex align-items-center justify-content-center'>
+      <div className='container d-flex align-items-center justify-content-center fs-1 text-white flex-column header-info mb-5'>
           <h1 className='text-center'>KM ELECTRICAL CONSTRUCTION</h1>
           <p className='text-center'>
               Experience top-quality electrical and plumbing services in Gauteng, 
@@ -21,5 +22,6 @@ export default function Header() {
             </NavLink>
       </div>
     </div>
+   </>
   )
 }
