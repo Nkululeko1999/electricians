@@ -1,4 +1,11 @@
 import industrialDomesticImg from "../components/repair/wiring.jpg";
+import wiringImg from "../components/repair/one.jpg";
+import faultsImg from "../components/repair/four.jpg";
+import appliancesImg from "../components/repair/tools.jpg";
+import maintenanceImg from "../components/repair/three.jpg";
+import pumpsImg from "../components/plumbing/plumber1.jpg";
+import generatorsImg from "../components/repair/three.jpg";
+
 
 
 export const servicesData = [
@@ -18,7 +25,7 @@ export const servicesData = [
     },
     {
         id: 2,
-        imgSrc: industrialDomesticImg,
+        imgSrc: faultsImg,
         heading: "Faults",
         description: "Expert circuit installation and troubleshooting.",
         eachServiceDescription: "When faults occur in electrical systems, KM Electrical swiftly identifies and rectifies issues, minimizing downtime and ensuring uninterrupted operations for businesses and households alike.",
@@ -31,7 +38,7 @@ export const servicesData = [
     },
     {
         id: 3,
-        imgSrc: industrialDomesticImg,
+        imgSrc: maintenanceImg,
         heading: "Maintenance",
         description: "Routine maintenance for electrical systems in homes and businesses.",
         eachServiceDescription: "Regular maintenance is crucial for prolonging the lifespan and performance of electrical systems. KM Electrical offers comprehensive maintenance services, including inspections, testing, and preventive measures, to keep systems running smoothly and avoid costly breakdowns.",
@@ -45,7 +52,7 @@ export const servicesData = [
     },
     {
         id: 4,
-        imgSrc: industrialDomesticImg,
+        imgSrc: generatorsImg,
         heading: "Generators",
         description: "Installation and maintenance of backup power generators.",
         eachServiceDescription: "KM Electrical provides expert installation, maintenance, and repair services for generators, offering reliable backup power solutions for industrial, commercial, and residential properties.",
@@ -59,7 +66,7 @@ export const servicesData = [
     },
     {
         id: 5,
-        imgSrc: industrialDomesticImg,
+        imgSrc: appliancesImg,
         heading: "Appliances",
         description: "Installation and repair of electrical appliances.",
         eachServiceDescription: "From installation to repair, KM Electrical handles a wide range of appliances, ensuring they operate safely and efficiently, whether in a commercial kitchen, industrial facility, or household setting.",
@@ -111,7 +118,7 @@ export const servicesData = [
     },
     {
         id: 9,
-        imgSrc: industrialDomesticImg,
+        imgSrc: wiringImg,
         heading: "Lines Control Wiring",
         description: "Wiring services for control systems in industrial settings.",
         eachServiceDescription: "Line control wiring is crucial for the operation of various systems and equipment. KM Electrical provides expert wiring services, ensuring precise control and reliable operation of electrical systems in industrial, commercial, and domestic settings.",
@@ -137,7 +144,7 @@ export const servicesData = [
     },
     {
         id: 11,
-        imgSrc: industrialDomesticImg,
+        imgSrc: pumpsImg,
         heading: "Pumps",
         description: "Installation and maintenance of electrical pumps.",
         eachServiceDescription: "Pumps play a vital role in many industrial processes and domestic water systems. KM Electrical provides expert pump services, including installation, maintenance, and repair, to ensure reliable operation and minimize downtime.",
