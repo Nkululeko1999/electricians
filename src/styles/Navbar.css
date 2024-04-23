@@ -5,12 +5,13 @@
     border-bottom: 4px solid #0e7490;
   }
   
-.navbar-brand {
-    font-weight: 500;
+.navbar-brand span {
+    font-weight: 700;
     color: #0e7490;
-    font-size: 24px;
+    font-size: 18px;
     transition: 0.3s color;
 }
+
   
 .quote-button {
     background-color: #0e7490;

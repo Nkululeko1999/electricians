@@ -1,11 +1,15 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 
+
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg">
       <div class="container">
-        <NavLink to='/' className="navbar-brand me-auto">Logo</NavLink>
+        <NavLink to='/' className="navbar-brand me-auto">
+          <span className='logo'>KM ELECTRICAL <br /> CONSTRUCTION</span>
+        </NavLink>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
             <h6 class="offcanvas-title" id="offcanvasNavbarLabel">KM EECTRICAL CONSTRUCTION</h6>

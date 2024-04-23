@@ -7,7 +7,7 @@ function Topbar() {
     const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div className="container-fluid px-5 d-none d-lg-block topbar">
+    <div className="container-fluid px-5 py-1 d-none d-lg-block topbar">
         <div className="row gx-0 align-items-center" style={{height: "45px"}}>
             <div className="col-lg-6 text-center text-lg-start mb-lg-0">
                 <div className="d-flex justify-content-start items-center flex-wrap relative">

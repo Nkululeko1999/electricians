@@ -37,7 +37,7 @@ function FAQ() {
                     aria-expanded="false"
                     aria-controls="collapseOne"
                   >
-                    Accordion Item #1
+                    How can I book a service?
                   </button>
                 </h2>
                 <div
@@ -61,7 +61,7 @@ function FAQ() {
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    Accordion Item #2
+                    What is the price range for services?
                   </button>
                 </h2>
                 <div
@@ -85,7 +85,7 @@ function FAQ() {
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Accordion Item #3
+                    What is the typical duration for service completion?
                   </button>
                 </h2>
                 <div
@@ -109,7 +109,7 @@ function FAQ() {
                     aria-expanded="false"
                     aria-controls="collapseFour"
                   >
-                    Accordion Item #4
+                    Are there any warranty or guarantee policies for services?
                   </button>
                 </h2>
                 <div
@@ -133,7 +133,7 @@ function FAQ() {
                     aria-expanded="false"
                     aria-controls="collapseFive"
                   >
-                    Accordion Item #5
+                    Is there a cancellation or rescheduling policy?
                   </button>
                 </h2>
                 <div
