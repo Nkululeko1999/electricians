@@ -1,7 +1,7 @@
 /* ###################################### Start: Contact ###################################### */
 .contact-container {
   padding-top: 4rem;
-  padding-bottom: 6rem;
+  padding-bottom: 5rem;
 }
 
 .address-card,
@@ -64,5 +64,28 @@
 @media (max-width: 767px) {
   .contact-nav {
     left: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-nav {
+    position: absolute;
+    top: -25px;  
+    left: 8px;
+    width: 95%;
+    padding: 8px; 
+    margin: 0 auto;
+    border-radius: 40px;
+  }
+
+  .nav-div {
+    font-weight: 400;
+    font-size: 0.983rem;
+    padding: 6px;
+    margin-right: 3px;
+  }
+
+  .active-contact-nav {
+    border-radius: 40px;
   }
 }

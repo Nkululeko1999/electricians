@@ -19,10 +19,10 @@ function FAQ() {
   }, []);
 
   return (
-    <div class="faq">
+    <div class={`faq ${screenWidth < 992 ? "bg-light" : ""}`}>
       <div class="container">
         <div class="row">
-          <h2 className={`faq-heading ${screenWidth < 768 ? "align-right" : "text-center"}`}>
+          <h2 className={`faq-heading ${screenWidth < 992 ? "text-dark mt-3" : "text-center"}`}>
             Frequently Asked Questions
           </h2>
           <div class="col-lg-6 offset-lg-1">
@@ -149,7 +149,7 @@ function FAQ() {
               </div>
             </div>
           </div>
-          <div class="" className={screenWidth < 768 ? "no-display " : "col-lg-5 align-self-center"}>
+          <div class="" className={screenWidth < 992 ? "no-display " : "col-lg-5 align-self-center"}>
             <div class="about-img pb-5 ps-5">
               <img
                 src={faqImg}

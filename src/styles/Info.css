@@ -94,3 +94,20 @@ p.info-text {
   background-color: #164e63;
 }
 
+
+
+@media (max-width: 767px) {
+  .info-container {
+    padding-top: 2rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .info-heading {
+    margin: 1rem;
+  }
+  
+  p.info-text {
+    width: 100%;
+    font-size: 15px;
+  }
+}

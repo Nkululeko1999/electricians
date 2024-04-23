@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import AppBreadcrump from "../components/app-breadcrump/AppBreadcrump";
@@ -6,16 +7,30 @@ import { servicesData } from "../data/ServicesData";
 
 export default function Services() {
 
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setScreenWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
     <>
       <Navbar />
       <AppBreadcrump heading="Services" />
 
-      <div className="services-header my-5">
+      <div className="services-header my-4">
         <div>
           <h3 className="mb-3 text-center">What We Do </h3>
         </div>
-        <h1 className="display-5 mb-4 w-50 text-center">
+        <h1 className={`text-center ${screenWidth < 992 ? "w-75 mb-2 display-6" : "w-50 mb-4 display-5 "}`}>
           Multitude of Services Provided by Our Expert Team
         </h1>
         <p className="mb-0 w-75 text-center">
