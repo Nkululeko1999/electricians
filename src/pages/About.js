@@ -31,7 +31,7 @@ function About() {
             <div className="card text-center mb-3 h-100 about-card">
               <div className="card-body">
                 <i class="bi bi-tools fs-3 mb-3"></i>
-                <h5 className="card-title">Sercices</h5>
+                <h5 className="card-title">Services</h5>
               </div>
               <div className="inner-card d-flex justify-content-center align-items-center">
                 <p className="number mb-0">10+ Services</p>
@@ -71,7 +71,7 @@ function About() {
                 <h5 className="card-title">Completed Projects</h5>
               </div>
               <div className="inner-card d-flex justify-content-center align-items-center">
-                <p className="number mb-0">57</p>
+                <p className="number mb-0">45+</p>
               </div>
             </div>
           </div>

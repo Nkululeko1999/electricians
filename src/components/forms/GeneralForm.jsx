@@ -67,7 +67,7 @@ function GeneralForm() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/general-inquiry",
+        "https://electricians-service.vercel.app/general-inquiry",
         formData
       );
 

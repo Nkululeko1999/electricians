@@ -44,7 +44,7 @@ function BuildForm() {
     setLoading(true);
     try {
       const response = await axios.post(
-        "http://localhost:5000/build-with-us",
+        "https://electricians-service.vercel.app/build-with-us",
         formData
       );
 
